@@ -1,0 +1,104 @@
+.certified {
+    background-color: $color-grey-0;
+    .content {
+        display: block;
+        padding-left: 78px;
+        padding-right: 78px;
+        .left {
+            cursor: pointer;
+            width: 50%;
+            padding-right: 20px;
+            float: left;
+            position: relative;
+            img {
+                display: block;
+                width: 100%;
+                height: 342px;
+            }
+            .detail {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                button {
+                    background-color: $color-blue-0;
+                    color: $color-white;
+                    border-radius: 1.95rem;
+                    padding: 0.75rem 1.3rem;
+                    font-size: 1.4rem;
+                    line-height: 1.6rem;
+                    letter-spacing: 0.05rem;
+                    border: 0.2rem solid$color-blue-0;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    transition: all 0.5s;
+                    &:hover {
+                        background-color: transparent;
+                        color: $color-blue-0;
+                    }
+                }
+                p {
+                    padding-top: 20px;
+                    text-align: center;
+                    color: $color-white;
+                    font-size: 14px;
+                    line-height: 0;
+                    span {
+                        color: $color-blue-0;
+                    }
+                }
+            }
+        }
+        .right {
+            cursor: pointer;
+            width: 50%;
+            padding-left: 20px;
+            float: left;
+            position: relative;
+            img {
+                display: block;
+                width: 100%;
+                height: 342px;
+                object-fit: cover;
+            }
+            .detail {
+                position: absolute;
+                bottom: 30px;
+                left: 50%;
+                transform: translateX(-50%);
+                text-align: center;
+                button {
+                    background-color: $color-blue-0;
+                    color: $color-white;
+                    border-radius: 1.95rem;
+                    padding: 0.75rem 1.3rem;
+                    font-size: 1.4rem;
+                    line-height: 1.6rem;
+                    letter-spacing: 0.05rem;
+                    border: 0.2rem solid$color-blue-0;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    transition: all 0.5s;
+                    &:hover {
+                        background-color: transparent;
+                        color: $color-blue-0;
+                    }
+                }
+                p {
+                    padding-bottom: 10px;
+                    text-align: center;
+                    color: $color-white;
+                    font-size: 14px;
+                    span {
+                        color: $color-blue-0;
+                    }
+                }
+                h5 {
+                    font-size: 16px;
+                    color: $color-white;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

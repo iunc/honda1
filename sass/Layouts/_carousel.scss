@@ -1,0 +1,100 @@
+.carousel {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 6rem;
+    position: relative;
+    img {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+    &__content {
+        position: absolute;
+        bottom: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: $color-white;
+        h2 {
+            font-size: 2.2rem;
+            line-height: 2.2rem;
+            font-weight: bold;
+            padding-bottom: 1rem;
+            span {
+                color: $color-blue-0;
+            }
+        }
+        &__btn {
+            text-transform: uppercase;
+            border-radius: 1.95rem;
+            border: 2px solid $color-white;
+            background-color: $color-red;
+            padding: 0.6rem 0.2rem;
+            width: 35%;
+            font-size: 1.6rem;
+            color: $color-white;
+            transition: 0.5s;
+            font-weight: $fw-0;
+            &:hover {
+                color: $color-red;
+                background-color: $color-white;
+            }
+        }
+    }
+    &__next {
+        background: $color-grey-3;
+        border-radius: 0.5rem 0 0 0.5rem;
+        left: auto;
+        right: 0;
+        height: 8rem;
+        opacity: 0.9;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        text-align: center;
+        top: 40%;
+        transform: translateZ(0);
+        width: 4rem;
+    }
+    &__prev {
+        background: $color-grey-3;
+        border-radius: 0.5rem 0 0 0.5rem;
+        left: 0;
+        right: auto;
+        height: 8rem;
+        opacity: 0.9;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        text-align: center;
+        top: 40%;
+        transform: translateZ(0);
+        width: 4rem;
+    }
+    &__play {
+        position: absolute;
+        bottom: 50px;
+        right: 30px;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        z-index: 9;
+        border-radius: 50%;
+        background-color: $color-blue-1;
+        i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $color-white;
+            font-size: 2rem;
+        }
+        &__overlay {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            border: 2px solid $color-red;
+        }
+    }
+}
